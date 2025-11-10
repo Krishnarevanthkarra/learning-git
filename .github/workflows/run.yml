@@ -28,7 +28,8 @@ jobs:
       # Run script to update Display.svg and README.md
       - name: Run Update Script
         run: |
-          python learning-git/app.py
+          cd learning-git
+          python app.py
 
       # Commit and push Display.svg to LeetCode-Stats
       - name: Commit Display.svg to LeetCode-Stats
